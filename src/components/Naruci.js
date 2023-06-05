@@ -27,13 +27,10 @@ export class Naruci extends Component {
                         <hr />
                         <label for="ime-prezime">Ime i Prezime</label>
                         <input type="text" id="ime-prezime" name="ime-prezime" onChange={this.promijeniIme}/>
-
                         <label for="phonenum">Broj Mobitela</label>
                         <input type="tel" id="phonenum" name="phonenum" />
-
                         <label for="adresa">Adresa Stanovanja</label>
                         <input type="text" id="adresa" name="adresa" />
-
                         <div>
                             <label for="slastica-input">Slastica</label>
                             <select name="slastica-input" id="slastica-input" onChange={this.promijeniKolac}>
@@ -52,13 +49,10 @@ export class Naruci extends Component {
                             <label for="kolicina-slastica">Količina Slastica</label>
                             <input type="text" name="kolicina-slastica" id="kolicina-slastica" />
                         </div>
-
                         <input type="submit" id="submit" value="Naruči!" />
                         <p>Bok{this.state.ime}! Vidim da voliš {this.state.kolac}. :)</p>
                     </form>
-
                 </div>
-
             </div>
         );
     }
